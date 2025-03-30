@@ -97,6 +97,10 @@ main {
                 border-radius: .5rem;
             }
 
+            .button-select {
+                background: var(--water-leafs);
+            }
+
             input {
                 width: 100%;
                 border: none;
