@@ -64,5 +64,23 @@ function calculate(){
 }
 
 function reset() {
-    
+    billInput.value = ""
+    bill = 0
+
+    numberOfPeopleInput.value = ""
+    numberOfPeople = 0
+
+    removeClassButtonSelected()
+    document.querySelector("#custom-tip").value =""
+    tipPercentage = 0
+
+    document.querySelector(".amount strong").innerText ="$0.00"
+    document.querySelector(".total strong").innerText ="$0.00"
+}
+
+function removeClassButtonSelected(){
+    if (buttonSelected !== null) {
+        buttonSelected.classList.remove("button-selected")
+        buttonSelected = null
+    }
 }
